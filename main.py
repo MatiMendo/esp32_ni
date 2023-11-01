@@ -35,8 +35,7 @@ def transmitir(pin):
     mqtt.disconnect()
     pulsos.init(period=150, mode=Timer.PERIODIC, callback=heartbeat)
 
-#publicar = Timer(0)
-#publicar.init(period=30000, mode=Timer.PERIODIC, callback=transmitir)
+
 pulsos = Timer(1)
 
 while True:
