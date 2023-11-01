@@ -28,7 +28,7 @@ def heartbeat(nada):
     contador += 1
   
 def transmitir(pin):
-    print("publicando")
+    print("publicando "+CLIENT_ID)
     mqtt.connect()
     mqtt.publish(f"testtopic/{CLIENT_ID}",datos)
     mqtt.disconnect()
