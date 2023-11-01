@@ -19,7 +19,7 @@ bandera=False
 liminf=26
 limsup=29
 
-def heuartbeat(nada):
+def heartbeat(nada):
     global contador
     if contador > 5:
         pulsos.deinit()
