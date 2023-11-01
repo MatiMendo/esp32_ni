@@ -16,7 +16,7 @@ led = Pin(2, Pin.OUT)
 d = dht.DHT11(Pin(25))
 contador = 0
 bandera=False
-liminf=22
+liminf=26
 limsup=29
 
 def heuartbeat(nada):
