@@ -15,7 +15,7 @@ mqtt = MQTTClient(CLIENT_ID, SERVIDOR_MQTT,
                   port=8883, keepalive=10, ssl=True)
 
 led = Pin(2, Pin.OUT)
-d = dht.DHT22(Pin(25))
+d = dht.DHT11(Pin(25))
 contador = 0
 
 def heartbeat(nada):
