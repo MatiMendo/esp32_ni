@@ -12,7 +12,7 @@ from umqtt.robust import MQTTClient
 CLIENT_ID = ubinascii.hexlify(unique_id()).decode('utf-8')
 
 mqtt = MQTTClient(CLIENT_ID, SERVIDOR_MQTT,
-                  port=8883, keepalive=40, ssl=True)
+                  port=1883, keepalive=180)
 
 sw = Pin(23, Pin.IN)
 led = Pin(2, Pin.OUT)
