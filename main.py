@@ -46,7 +46,7 @@ while True:
             ('temperatura',temperatura),
             ('humedad',humedad)
         ]))
-        print(datos)
+        print(datos+CLIENT_ID)
     except OSError as e:
         print("sin sensor")
     mqtt.check_msg()
