@@ -14,4 +14,4 @@ while True:
         led.value(not led.value())
         contador += 1
         print(contador)
-    time.sleep_ms(200)
+    time.sleep_ms(5)
