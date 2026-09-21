@@ -6,7 +6,7 @@ from machine import Timer
 timer_init = lambda t, p, cb: t.init(period=p, callback=cb)
 
 class DebouncedSwitch:
-    def __init__(self, sw, cb, arg=None, delay=50, tid=4):
+    def __init__(self, sw, cb, arg=None, delay=50, tid=1):
         self.sw = sw
         self._sw_cb = self.sw_cb
         self._tim_cb = self.tim_cb
