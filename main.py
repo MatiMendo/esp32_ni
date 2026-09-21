@@ -11,7 +11,7 @@ from debounce import DebouncedSwitch
 
 sw = Pin(23, Pin.IN)
 led = Pin(2, Pin.OUT)
-d = dht.DHT22(Pin(25))
+d = dht.DHT11(Pin(25))
 
 print("esperand pulsador")
 contador=0
